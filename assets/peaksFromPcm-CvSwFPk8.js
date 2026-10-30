@@ -1,0 +1,1 @@
+function c(h,n){if(!h.length||n<=0)return Array.from({length:Math.max(1,n)},(t,a)=>.22+.12*Math.sin(a*.35));const r=Math.max(1,Math.floor(h.length/n)),e=[];for(let t=0;t<n;t++){let a=0;const M=t*r,x=Math.min(h.length,M+r);for(let o=M;o<x;o++)a=Math.max(a,Math.abs(h[o]));e.push(a)}const m=Math.max(...e,.001);return e.map(t=>Math.max(.06,t/m))}export{c as peaksFromSamples};

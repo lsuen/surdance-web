@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1430"/>
+      <stop offset="40%" stop-color="#2a1c28"/>
+      <stop offset="100%" stop-color="#0e1014"/>
+    </linearGradient>
+    <pattern id="asphalt" width="32" height="32" patternUnits="userSpaceOnUse">
+      <rect width="32" height="32" fill="#1a1c20"/>
+      <circle cx="8" cy="10" r="1" fill="#2a2c30"/>
+      <circle cx="22" cy="24" r="1.2" fill="#222428"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#dusk)"/>
+  <rect y="360" width="1280" height="360" fill="url(#asphalt)"/>
+  <!-- court lines -->
+  <rect x="140" y="400" width="1000" height="260" fill="none" stroke="#ffe600" stroke-width="4" opacity="0.8"/>
+  <line x1="640" y1="400" x2="640" y2="660" stroke="#ffe600" stroke-width="3" opacity="0.7"/>
+  <circle cx="640" cy="530" r="70" fill="none" stroke="#ff2d95" stroke-width="3" opacity="0.75"/>
+  <line x1="140" y1="530" x2="1140" y2="530" stroke="#00f0ff" stroke-width="2" opacity="0.5" stroke-dasharray="12 10"/>
+  <text x="640" y="200" text-anchor="middle" fill="#b8ff00" font-family="Impact, sans-serif" font-size="56" opacity="0.85">BALLIN'</text>
+  <rect x="80" y="80" width="120" height="8" fill="#ff2d95" opacity="0.6"/>
+  <rect x="1080" y="100" width="80" height="8" fill="#00f0ff" opacity="0.6"/>
+</svg>

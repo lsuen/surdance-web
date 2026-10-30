@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d0d0f" />
+    <title>SurDance · 下载</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0d0d0f;
+        --fg: #f2efe8;
+        --muted: #9a958c;
+        --accent: #e8c547;
+        --line: #2a2824;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Rubik", "PingFang SC", "Hiragino Sans GB", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        line-height: 1.5;
+      }
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+        letter-spacing: 0.04em;
+        margin: 0 0 0.35rem;
+      }
+      .swl {
+        color: var(--accent);
+        font-style: italic;
+        transform: skew(-6deg);
+        display: inline-block;
+      }
+      .lead {
+        color: var(--muted);
+        margin: 0 0 1.75rem;
+      }
+      section {
+        border-top: 2px solid var(--line);
+        padding: 1.1rem 0 0.4rem;
+        margin-top: 0.5rem;
+      }
+      h2 {
+        font-size: 1rem;
+        margin: 0 0 0.45rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      p,
+      li {
+        margin: 0.35rem 0;
+        color: var(--fg);
+      }
+      ul {
+        margin: 0.4rem 0 0.8rem;
+        padding-left: 1.2rem;
+      }
+      a {
+        color: var(--accent);
+        text-underline-offset: 0.15em;
+      }
+      .note {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .back {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="./">← 打开 SurDance</a>
+      <h1>SurDance <span class="swl" aria-hidden="true">SWL</span></h1>
+      <p class="lead">选一种方式安装或在线练舞。安装包在 GitHub Releases。</p>
+
+      <section>
+        <h2>浏览器 / 主屏幕</h2>
+        <ul>
+          <li><a href="./">无偿 WebApp</a>（本站，可「添加到主屏幕」）</li>
+          <li><a href="https://tdance.nnrc.ren/">预览站</a></li>
+          <li><a href="https://dance.nnrc.ren/">生产站</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>安装包</h2>
+        <p>
+          打开
+          <a href="https://github.com/lsuen/surDancePlayer-releases/releases">Releases</a>
+          ，按系统下载最新文件：
+        </p>
+        <ul>
+          <li><strong>Windows</strong>：Setup 安装包，或 portable zip</li>
+          <li><strong>macOS</strong>：`.app` zip（也可 Homebrew，见下）</li>
+          <li><strong>Linux</strong>：`linux-cli` tar.gz（命令行 + 内嵌网页）</li>
+          <li><strong>Android</strong>：`full` 离线 APK（手机 / 平板 / 电视）</li>
+        </ul>
+        <p class="note">Windows 若提示缺少组件，安装 WebView2 后再开。</p>
+      </section>
+
+      <section>
+        <h2>macOS Homebrew</h2>
+        <p><code>brew tap lsuen/surdance && brew install --cask surdance-player</code></p>
+      </section>
+
+      <section>
+        <h2>说明</h2>
+        <p class="note">
+          产品面向练舞，随便装、随便转。详细步骤见仓库
+          <a href="https://github.com/lsuen/surDancePlayer-releases#readme">Releases README</a>。
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

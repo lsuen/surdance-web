@@ -1,0 +1,5 @@
+{
+  "updated": "2026-07-19T00:00:00.000Z",
+  "models": [],
+  "note": "Optional ONNX models for better-quality analysis. Configure URLs in scripts/fetch-optional-models.mjs"
+}
